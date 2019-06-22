@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+{%block content%}
+<br>
+<div class="container">
+    <br>
+    <h1>hello</h1>
+    <form action="{% url 'create' %}" method='GET'>
+        <p>title :</p>
+        <input type="text" name="title">
+        <p>content :</p>
+        <textarea name="body" id="" cols="30" rows="10"></textarea>
+        <br><input class="btn btn-dark" type="submit" value="Submit!">
+    </form>
+
+</div>
+{% endblock %}
